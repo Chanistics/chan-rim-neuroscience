@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content="0; url=ko.html" />
+    <script>window.location.replace(`ko.html${window.location.search}${window.location.hash}`);</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#081211" />
+    <meta name="description" content="미세아교세포의 노화, DNA 손상 복구, 재증식과 신경면역 가소성을 연구하는 임찬의 연구 포트폴리오입니다." />
+    <title>임찬 — 신경면역학 연구자</title>
+    <link rel="preconnect" href="https://api.fontshare.com" />
+    <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin />
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&amp;display=swap" rel="stylesheet" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="stylesheet" href="styles.css?v=4" />
+    <link rel="stylesheet" href="prototypes/dark-science/theme.css?v=1" />
+    <script>
+      document.documentElement.classList.add('js');
+      const pageParams = new URLSearchParams(window.location.search);
+      if (pageParams.get('lang') !== 'ko') {
+        window.location.replace('en.html?theme=dark-science');
+      }
+      document.documentElement.dataset.theme = 'dark-science';
+    </script>
+  </head>
+  <body data-lang="ko">
+    <a class="skip-link" href="#content">본문으로 건너뛰기</a>
+    <header class="hero" id="top">
+      <div class="hero-intro"><p>미세아교세포의 노화와 회복,<br />환경에 따른 기능 변화를 연구합니다.</p><a class="button" href="#research">주요 연구 보기</a></div>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">메뉴</button>
+      <nav id="site-nav" class="site-nav" aria-label="주요 메뉴"><a href="#profile">소개</a><a href="#research">연구</a><a href="#publications">논문</a><a href="en.html?theme=dark-science" lang="en">English</a></nav>
+      <h1 class="hero-name" aria-label="임찬, 신경면역학 연구자">CHAN RIM</h1>
+      <p class="hero-discipline">Microglial senescence · DNA repair · Neuroimmune plasticity</p>
+      <div class="hero-place">KBRI · Dementia Research Group<br />Daegu, Republic of Korea</div>
+      <div class="hero-links"><a href="#trajectory">연구 여정</a><a href="#contact">연락처</a></div>
+      <figure class="hero-mobile-image" aria-hidden="true"><img src="assets/fluorescently-labeled-microglia-in-a-coronal-brain.jpg" width="1920" height="1192" alt="" fetchpriority="high" decoding="async" /></figure>
+    </header>
+
+    <main id="content">
+      <section class="chapter profile" id="profile">
+        <div class="profile-statement" data-reveal><h2>회복력을 잃고 되찾는 세포</h2><p>미세아교세포가 DNA 손상, 출산, 태아기 스트레스에 반응하며 기능을 바꾸는 과정을 추적합니다.</p></div>
+        <figure class="living-cell" data-reveal>
+          <video autoplay muted loop playsinline preload="metadata" poster="assets/in-situ-dividing-and-phagocytosing-retinal-microglia-poster.jpg" width="480" height="480" aria-hidden="true"><source src="assets/in-situ-dividing-and-phagocytosing-retinal-microglia.webm" type="video/webm" /></video>
+          <figcaption>활성화된 망막 미세아교세포의 세포골격. 5초 현미경 영상.</figcaption>
+        </figure>
+        <div class="profile-copy" data-reveal><p>상담심리와 사회복지에서 출발해 생명과학으로 옮겨왔습니다. 마음과 행동 뒤의 생물학적 변화를 이해하려는 질문은 미세아교세포와 신경면역 환경을 연구하는 일로 이어졌습니다.</p><p>제1저자·공동 제1저자 연구를 통해 태아기 환경의 성별 의존적 영향, 공황장애 환자 유래 세포의 기능 변화, 노화 미세아교세포의 DNA 복구, 산후 뇌에서의 재증식을 밝혀왔습니다.</p></div>
+      </section>
+
+      <section class="chapter research" id="research">
+        <div class="section-heading" data-reveal><h2>논문으로 이어진 연구 질문</h2><p>제1저자·공동 제1저자 논문의 핵심 결과를 네 가지 축으로 정리했습니다.</p></div>
+        <div class="lens" data-lens>
+          <div class="lens-controls" role="tablist" aria-label="주요 연구 질문"><button class="lens-tab is-active" type="button" role="tab" aria-selected="true" data-lens-key="repair">DNA 복구</button><button class="lens-tab" type="button" role="tab" aria-selected="false" data-lens-key="patient">환자 유래 모델</button><button class="lens-tab" type="button" role="tab" aria-selected="false" data-lens-key="repopulation">재증식</button><button class="lens-tab" type="button" role="tab" aria-selected="false" data-lens-key="development">발달 환경</button></div>
+          <div class="lens-stage">
+            <figure class="lens-picture shutter is-in"><img id="lens-image" src="assets/fluorescently-labeled-microglia-in-a-mouse-brain.jpg" width="1920" height="1115" alt="뇌 조직 속 녹색으로 표지된 미세아교세포" loading="lazy" decoding="async" /></figure>
+            <div class="lens-copy" aria-live="polite"><h3 id="lens-title">핵으로 이동하는 profilin-1</h3><p id="lens-question">DNA 이중가닥 절단 뒤 PFN1은 핵으로 이동해 복구를 돕지만, 노화 미세아교세포에서는 이 균형의 붕괴가 식균작용 저하와 연결됩니다.</p><p id="lens-evidence"><strong>논문 근거</strong> 제1저자 · Glia 2025 · DSB · NHEJ · nuclear F-actin</p></div>
+          </div>
+        </div>
+        <noscript><p class="noscript-note">DNA 복구, 환자 유래 모델, 산후 재증식, 발달 환경은 주요 논문을 관통하는 네 가지 연구 축입니다.</p></noscript>
+      </section>
+
+      <section class="image-field" aria-label="형광 현미경으로 본 대뇌피질"><img class="drift-image" src="assets/brain-cortex.png" width="1920" height="2004" alt="층별 단백질이 여러 색으로 표지된 생쥐 대뇌피질 단면" loading="lazy" decoding="async" /><p>환경은<br />세포를 바꿉니다.</p></section>
+
+      <section class="chapter publications" id="publications">
+        <div class="section-heading publication-heading" data-reveal><h2>주요 논문과 전체 연구</h2><p>리뷰를 포함한 다섯 편의 제1저자·공동 제1저자 논문을 먼저 소개합니다.</p></div>
+        <div class="publication-toolbar" data-reveal><div class="publication-filters" role="tablist" aria-label="논문 보기 필터"><button class="filter-button is-active" type="button" data-year="featured">주요 논문</button><button class="filter-button" type="button" data-year="all">전체</button><button class="filter-button" type="button" data-year="2026">2026</button><button class="filter-button" type="button" data-year="2025">2025</button><button class="filter-button" type="button" data-year="2024">2024</button><button class="filter-button" type="button" data-year="2023">2023</button><button class="filter-button" type="button" data-year="2022">2022</button><button class="filter-button" type="button" data-year="2021">2021</button></div><span class="publication-count" id="publication-count">5편</span></div>
+        <div class="publication-list" id="publication-list"></div>
+      </section>
+
+      <section class="chapter trajectory" id="trajectory">
+        <h2 data-reveal>하나의 질문이 다음 질문으로</h2>
+        <div class="trajectory-row" data-reveal><strong>2017</strong><div><h3>마음과 행동</h3><p>한동대학교에서 상담심리와 사회복지를 공부하며 정신질환과 인간 행동에 대한 질문을 시작했습니다.</p></div><img src="assets/human-brain-organoid.jpg" width="1920" height="1910" alt="청록색과 자홍색으로 표지된 사람 뇌 오가노이드 절편" loading="lazy" decoding="async" /></div>
+        <div class="trajectory-row reverse" data-reveal><strong>2022</strong><div><h3>발달 환경과 성별</h3><p>태아기 dexamethasone 노출 뒤 미세아교세포 변화와 성별에 따라 달라지는 행동 양상을 공동 제1저자로 보고했습니다.</p></div><img src="assets/rat-primary-cortical-neuron-culture-deconvolved-z.jpg" width="1920" height="1540" alt="여러 색의 형광 표지로 관찰한 일차 대뇌피질 신경세포 배양" loading="lazy" decoding="async" /></div>
+        <div class="trajectory-row" data-reveal><strong>2023</strong><div><h3>환자 유래 미세아교세포</h3><p>공황장애 환자 유래 iMG에서 식균작용 저하와 TREM2 증가를 확인하고, 임상 증상과의 연관성을 공동 제1저자로 제시했습니다.</p></div><img src="assets/human-brain-organoid.jpg" width="1920" height="1910" alt="청록색과 자홍색으로 표지된 사람 뇌 오가노이드 절편" loading="lazy" decoding="async" /></div>
+        <div class="trajectory-row reverse" data-reveal><strong>2024–25</strong><div><h3>노화와 DNA 복구</h3><p>노화 미세아교세포의 역할을 리뷰로 정리하고, 핵 내 PFN1의 DNA 복구 기능과 식균작용 저하의 연결을 제1저자 논문으로 규명했습니다.</p></div><img src="assets/cultured-rat-hippocampal-neuron-24327909026.jpg" width="1918" height="1219" alt="녹색과 주황색으로 표지된 배양 해마 신경세포" loading="lazy" decoding="async" /></div>
+        <div class="trajectory-row" data-reveal><strong>2026</strong><div><h3>산후 뇌의 재증식</h3><p>출산 뒤 감소한 해마 미세아교세포가 말초 유입이 아닌 resident microglia의 증식으로 회복되고, 장기적인 단백질체 변화를 남긴다는 사실을 공동 제1저자로 밝혔습니다.</p></div><img src="assets/fluorescently-labeled-microglia-in-a-mouse-brain.jpg" width="1920" height="1115" alt="뇌 조직 속 녹색으로 표지된 미세아교세포" loading="lazy" decoding="async" /></div>
+      </section>
+
+      <section class="chapter fellowship" id="primary-works">
+        <div class="fellowship-figure" data-reveal><span>2022–2026</span><strong>5</strong><p>First / co-first works</p></div>
+        <div class="fellowship-copy" data-reveal><h2>다섯 편의 논문이 만든 하나의 질문</h2><p>발달 환경, 환자 유래 세포, DNA 손상, 노화와 출산이라는 서로 다른 변화 속에서 미세아교세포가 어떻게 기능을 잃고 다시 조직의 균형을 만드는지 연구해왔습니다.</p><dl><div><dt>원저</dt><dd>제1저자·공동 제1저자 연구 논문 4편</dd></div><div><dt>리뷰</dt><dd>노화 미세아교세포를 다룬 공동 제1저자 리뷰 1편</dd></div><div><dt>공통 질문</dt><dd>발달, 정신질환, 노화와 모성 뇌를 가로지르는 미세아교세포의 회복력</dd></div></dl></div>
+        <figure class="fellowship-image" data-reveal><img src="assets/fluorescently-labeled-microglia-in-a-coronal-brain.jpg" width="1920" height="1192" alt="붉은 형광으로 미세아교세포가 표지된 생쥐 뇌 관상면" loading="lazy" decoding="async" /></figure>
+      </section>
+
+      <section class="contact" id="contact">
+        <h2>함께 연구해요</h2><p class="contact-row">한국뇌연구원</p><p class="contact-row">치매 연구 그룹</p><p class="contact-row">대구광역시 동구 첨복로 61</p><p class="contact-row">미세아교세포 · 세포 노화 · DNA 복구</p><a class="contact-row contact-action" href="#publications">연구 기록 보기 <span aria-hidden="true">↗</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-top"><div><h2>다음 질문을<br />함께 찾습니다</h2><a class="button button-light" href="#top">처음으로</a></div><nav aria-label="하단 메뉴"><a href="#research">연구</a><a href="#publications">논문</a><a href="#trajectory">여정</a><a href="en.html" lang="en">English</a></nav></div>
+      <p class="credits">이미지 및 영상: <a href="https://commons.wikimedia.org/wiki/File:Fluorescently_Labeled_Microglia_in_a_Coronal_Brain_Section_from_a_C57_Mouse.jpg">Syed07</a>, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Fluorescently_Labeled_Microglia_in_a_Mouse_Brain_Section.jpg">Syed07</a>, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Rat_primary_cortical_neuron_culture,_deconvolved_z-stack_overlay_(30614937102).jpg">ZEISS Microscopy</a>, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Cultured_Rat_Hippocampal_Neuron_(24327909026).jpg">ZEISS Microscopy</a>, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Brain_Cortex.png">Mamunur Rashid</a>, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Human_Brain_Organoid.jpg">Nreis1</a>, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>; <a href="https://commons.wikimedia.org/wiki/File:In-Situ-Dividing-and-Phagocytosing-Retinal-Microglia-Express-Nestin-Vimentin-and-NG2-In-Vivo-pone.0022408.s001.ogv">Wohl et al.</a>, <a href="https://creativecommons.org/licenses/by/2.5">CC BY 2.5</a>. Wikimedia Commons.</p>
+      <div class="footer-meta"><span>© <span id="year"></span> Chan Rim</span><span>Research portfolio</span></div><div class="footer-name" aria-hidden="true">CHAN RIM</div>
+    </footer>
+    <script src="app.js?v=5"></script>
+  </body>
+</html>

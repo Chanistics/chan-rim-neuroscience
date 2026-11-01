@@ -1,0 +1,14 @@
+local-data/
+tmp/
+.pnpm-store/
+.DS_Store
+.taste-skill/
+sites/
+scripts/
+prototypes/*
+!prototypes/dark-science/
+prototypes/dark-science/*
+!prototypes/dark-science/theme.css
+assets/figure-sources-pdf/
+assets/hypothesis-figures-dark/*-source.png
+assets/hypothesis-figures-dark/test-*.png

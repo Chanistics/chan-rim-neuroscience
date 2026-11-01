@@ -1,0 +1,458 @@
+html[data-theme="dark-science"] {
+  color-scheme: dark;
+  --bg: #081211;
+  --surface: #111d1b;
+  --surface-deep: #0c1513;
+  --ink: #e8ede8;
+  --muted: #aab6af;
+  --accent: #79bfb2;
+  --accent-ink: #07100f;
+  --field-yellow: #081211;
+  --field-white: #081211;
+  --field-pink: #081211;
+  --field-cyan: #081211;
+  --field-orange: #081211;
+  --field-black: #050807;
+  --field-black-ink: #e8ede8;
+  --field-soft: #111d1b;
+  --field-soft-deep: #0c1513;
+  --field-credit: #9aa59f;
+  --paper-ink: #e8ede8;
+  --paper-muted: #aab6af;
+  --bronze: #9d8877;
+  --font-editorial: "Source Serif 4", "Noto Serif KR", Georgia, serif;
+}
+
+html[data-theme="dark-science"],
+html[data-theme="dark-science"] body {
+  background: var(--bg);
+}
+
+html[data-theme="dark-science"] body,
+html[data-theme="dark-science"] button,
+html[data-theme="dark-science"] a {
+  font-family: var(--font-editorial);
+  font-weight: 400;
+}
+
+html[data-theme="dark-science"] h1,
+html[data-theme="dark-science"] h2,
+html[data-theme="dark-science"] h3,
+html[data-theme="dark-science"] h4,
+html[data-theme="dark-science"] .publication-year,
+html[data-theme="dark-science"] .trajectory-row strong,
+html[data-theme="dark-science"] .fellowship-figure strong,
+html[data-theme="dark-science"] .footer-name {
+  font-family: var(--font-editorial);
+  font-weight: 600;
+  letter-spacing: -0.045em;
+}
+
+html[data-theme="dark-science"] .hero {
+  color: var(--ink);
+  background: var(--field-yellow);
+}
+
+html[data-theme="dark-science"] .hero-discipline {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: calc(50% + min(8.1vw, 7.2rem));
+  transform: translateX(-50%);
+  width: max-content;
+  max-width: calc(100% - (var(--margin) * 2));
+  color: var(--ink);
+  font-size: 1.125rem;
+  line-height: 1.35;
+  text-align: center;
+}
+
+html[data-theme="dark-science"] .hero-name {
+  color: var(--ink);
+  font-size: min(14.55vw, 13rem);
+  font-weight: 500;
+  letter-spacing: -0.068em;
+}
+
+html[data-theme="dark-science"] .hero-intro p,
+html[data-theme="dark-science"] .section-heading > p,
+html[data-theme="dark-science"] .profile-statement > p,
+html[data-theme="dark-science"] .fellowship-copy > p {
+  font-weight: 400;
+  letter-spacing: -0.018em;
+}
+
+html[data-theme="dark-science"] .button {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+html[data-theme="dark-science"] :focus-visible {
+  outline-color: var(--accent);
+}
+
+html[data-theme="dark-science"] .skip-link {
+  color: var(--ink);
+  background: var(--bg);
+}
+
+html[data-theme="dark-science"] .profile,
+html[data-theme="dark-science"] .publications {
+  color: var(--ink);
+  background: var(--field-black);
+}
+
+html[data-theme="dark-science"] .profile-copy,
+html[data-theme="dark-science"] .living-cell figcaption,
+html[data-theme="dark-science"] .publication-count,
+html[data-theme="dark-science"] .publication-meta {
+  color: var(--paper-muted);
+}
+
+html[data-theme="dark-science"] .profile-copy {
+  color: var(--ink);
+}
+
+html[data-theme="dark-science"] .chapter {
+  padding-block: clamp(6rem, 10vw, 9rem);
+}
+
+html[data-theme="dark-science"] .research {
+  color: var(--ink);
+  background: var(--field-black);
+}
+
+html[data-theme="dark-science"] .lens-tab {
+  color: var(--ink);
+  font-weight: 500;
+  opacity: 0.32;
+}
+
+html[data-theme="dark-science"] .lens-tab.is-active {
+  color: var(--accent);
+  opacity: 1;
+}
+
+html[data-theme="dark-science"] .research-arc .lifespan-evidence .lens-tab {
+  color: #edf5f2;
+}
+
+html[data-theme="dark-science"] .research-arc .lifespan-evidence .lens-tab.is-active {
+  color: #8bd2c4;
+}
+
+html[data-theme="dark-science"] .lifespan-evidence .lens-copy #lens-evidence {
+  color: #edf5f2;
+}
+
+html[data-theme="dark-science"] .image-field p {
+  color: var(--ink);
+}
+
+html[data-theme="dark-science"] .filter-button {
+  color: var(--ink);
+  background: var(--surface);
+}
+
+html[data-theme="dark-science"] .filter-button.is-active {
+  color: var(--accent-ink);
+  background: var(--accent);
+}
+
+html[data-theme="dark-science"] .publication-item {
+  background: var(--surface);
+}
+
+html[data-theme="dark-science"] .publication-item:nth-of-type(even) {
+  background: var(--surface-deep);
+}
+
+html[data-theme="dark-science"] .publication-link {
+  color: var(--ink);
+  background: var(--bg);
+}
+
+html[data-theme="dark-science"] .trajectory {
+  color: var(--ink);
+  background: var(--field-black);
+}
+
+html[data-theme="dark-science"] .trajectory-row p {
+  color: var(--ink);
+}
+
+html[data-theme="dark-science"] .profile-statement > p {
+  max-width: 34ch;
+  font-size: clamp(1.65rem, 2.5vw, 2.25rem);
+  line-height: 1.12;
+}
+
+html[data-theme="dark-science"] .image-field p {
+  max-width: 22ch;
+  font-size: clamp(2.5rem, 4.8vw, 3.5rem);
+}
+
+html[data-theme="dark-science"] .fellowship-copy h2 {
+  max-width: 17ch;
+  font-size: clamp(2.6rem, 4.4vw, 3.5rem);
+}
+
+html[data-theme="dark-science"] .fellowship {
+  color: var(--ink);
+  background: var(--field-black);
+}
+
+html[data-theme="dark-science"] .fellowship-figure span,
+html[data-theme="dark-science"] .fellowship-figure p,
+html[data-theme="dark-science"] .fellowship-copy dt {
+  color: #c6b9ae;
+}
+
+html[data-theme="dark-science"] .fellowship-figure strong {
+  color: var(--bronze);
+}
+
+html[data-theme="dark-science"] .fellowship-copy dl > div {
+  background: var(--surface);
+}
+
+html[data-theme="dark-science"] .contact {
+  color: var(--ink);
+  background: var(--field-black);
+}
+
+html[data-theme="dark-science"] .contact-row:nth-child(even) {
+  background: #12201e;
+}
+
+html[data-theme="dark-science"] .contact-row:nth-child(odd) {
+  background: #1b2926;
+}
+
+html[data-theme="dark-science"] .contact-action {
+  color: var(--accent-ink);
+  background: var(--accent) !important;
+}
+
+html[data-theme="dark-science"] .contact-action span {
+  color: var(--ink);
+  background: var(--bg);
+}
+
+html[data-theme="dark-science"] .button-light {
+  color: var(--accent-ink);
+  background: var(--accent);
+}
+
+html[data-theme="dark-science"] .site-footer {
+  color: var(--ink);
+}
+
+/* Unified black editorial ground */
+html[data-theme="dark-science"] .research-overview,
+html[data-theme="dark-science"] .current-studies,
+html[data-theme="dark-science"] .profile,
+html[data-theme="dark-science"] .research,
+html[data-theme="dark-science"] .publications,
+html[data-theme="dark-science"] .trajectory,
+html[data-theme="dark-science"] .fellowship,
+html[data-theme="dark-science"] .contact,
+html[data-theme="dark-science"] .site-footer {
+  color: var(--ink);
+  background: var(--field-black);
+}
+
+html[data-theme="dark-science"] .current-studies { background: var(--surface-deep); }
+
+html[data-theme="dark-science"] .current-study-copy > p:not(.current-study-index),
+html[data-theme="dark-science"] .current-study-figure figcaption {
+  color: var(--muted);
+}
+
+html[data-theme="dark-science"] .current-study-figure img {
+  background: var(--field-black);
+}
+
+html[data-theme="dark-science"] .figure-reference {
+  color: color-mix(in srgb, var(--muted) 74%, var(--accent));
+}
+
+html[data-theme="dark-science"] .profile-statement > p,
+html[data-theme="dark-science"] .hypothesis-intro p,
+html[data-theme="dark-science"] .hypothesis-copy p,
+html[data-theme="dark-science"] .profile-copy,
+html[data-theme="dark-science"] .publication-count,
+html[data-theme="dark-science"] .publication-meta,
+html[data-theme="dark-science"] .living-cell figcaption,
+html[data-theme="dark-science"] .overview-visual figcaption {
+  color: var(--muted);
+}
+
+html[data-theme="dark-science"] .hypothesis-copy {
+  grid-column: 1 / span 4;
+}
+
+html[data-theme="dark-science"] .hypothesis-step-reverse .hypothesis-copy {
+  grid-column: 9 / -1;
+}
+
+html[data-theme="dark-science"] .hypothesis-visuals {
+  grid-column: 6 / -1;
+}
+
+html[data-theme="dark-science"] .hypothesis-step-reverse .hypothesis-visuals {
+  grid-column: 1 / span 7;
+}
+
+html[data-theme="dark-science"] .hypothesis-visuals-single {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+html[data-theme="dark-science"] .hypothesis-copy::before {
+  color: color-mix(in srgb, var(--accent) 68%, transparent);
+}
+
+html[data-theme="dark-science"] .evidence-panel {
+  padding: 0;
+  background: transparent;
+}
+
+html[data-theme="dark-science"] .evidence-panel img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  background: transparent;
+  mix-blend-mode: normal;
+}
+
+html[data-theme="dark-science"] .evidence-panel figcaption {
+  max-width: 76ch;
+  padding-top: 0.85rem;
+  color: var(--muted);
+}
+
+html[data-theme="dark-science"] .hypothesis-visuals-integrator .evidence-panel-wide,
+html[data-theme="dark-science"] .hypothesis-visuals-origin .evidence-panel-wide,
+html[data-theme="dark-science"] .hypothesis-visuals-continuum .evidence-panel:first-child {
+  margin-top: 0;
+}
+
+html[data-theme="dark-science"] .lifespan-evidence {
+  color: var(--ink);
+  background: var(--surface-deep);
+}
+
+html[data-theme="dark-science"] .lifespan-evidence .paper-figure,
+html[data-theme="dark-science"] .paper-figure {
+  background: var(--surface);
+}
+
+html[data-theme="dark-science"] .paper-figure img {
+  mix-blend-mode: normal;
+  filter: none;
+}
+
+html[data-theme="dark-science"] .publication-title,
+html[data-theme="dark-science"] .publication-year,
+html[data-theme="dark-science"] .trajectory-row h3,
+html[data-theme="dark-science"] .fellowship-copy dd,
+html[data-theme="dark-science"] .contact-info-row {
+  color: var(--ink);
+}
+
+html[data-theme="dark-science"] .publication-item,
+html[data-theme="dark-science"] .publication-item:nth-of-type(even),
+html[data-theme="dark-science"] .fellowship-copy dl > div,
+html[data-theme="dark-science"] .contact-row:nth-child(even),
+html[data-theme="dark-science"] .contact-row:nth-child(odd) {
+  background: var(--surface);
+}
+
+html[data-theme="dark-science"] .publication-item:nth-of-type(even),
+html[data-theme="dark-science"] .contact-row:nth-child(odd) {
+  background: var(--surface-deep);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html[data-theme="dark-science"].js [data-reveal] {
+    opacity: 1;
+    transform: translateY(18px);
+  }
+
+  html[data-theme="dark-science"].js [data-reveal].is-in {
+    transform: none;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  html[data-theme="dark-science"] .button:hover,
+  html[data-theme="dark-science"] .button-light:hover {
+    color: var(--paper-ink);
+    background: var(--field-white);
+  }
+
+  html[data-theme="dark-science"] .publication-link:hover {
+    color: var(--accent-ink);
+    background: var(--accent);
+  }
+}
+
+@media (max-width: 800px) {
+  html[data-theme="dark-science"] .hero-discipline {
+    display: block;
+    left: 1rem;
+    right: 1rem;
+    top: 20%;
+    transform: none;
+    width: auto;
+    max-width: 34ch;
+    color: var(--muted);
+    font-size: 1.125rem;
+    text-align: left;
+  }
+
+  html[data-theme="dark-science"] .hero-name {
+    font-size: 14.5vw;
+    letter-spacing: -0.06em;
+  }
+
+  html[data-theme="dark-science"] .hero-intro p {
+    font-size: 1.125rem;
+  }
+
+  html[data-theme="dark-science"] .hero-intro {
+    top: 35%;
+  }
+
+  html[data-theme="dark-science"] .lens-controls {
+    grid-template-columns: 1fr;
+  }
+
+  html[data-theme="dark-science"] .site-nav {
+    color: var(--ink);
+    background: var(--field-pink);
+  }
+
+  html[data-theme="dark-science"] .lens-tab.is-active {
+    color: var(--accent-ink);
+    background: var(--accent);
+  }
+
+  html[data-theme="dark-science"] .research-arc .lifespan-evidence .lens-tab.is-active {
+    color: var(--accent-ink);
+  }
+
+  html[data-theme="dark-science"] .profile-statement > p {
+    font-size: 1.5rem;
+  }
+
+  html[data-theme="dark-science"] .image-field p {
+    max-width: 22ch;
+    font-size: 2rem;
+  }
+
+  html[data-theme="dark-science"] .fellowship-copy h2 {
+    max-width: 15ch;
+    font-size: 2.5rem;
+  }
+}
