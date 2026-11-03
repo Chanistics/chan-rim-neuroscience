@@ -13,8 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&amp;display=swap" rel="stylesheet" />
     <link rel="manifest" href="manifest.webmanifest" />
-    <link rel="stylesheet" href="styles.css?v=16" />
-    <link rel="stylesheet" href="prototypes/dark-science/theme.css?v=7" />
+    <link rel="stylesheet" href="styles.css?v=18" />
+    <link rel="stylesheet" href="prototypes/dark-science/theme.css?v=8" />
     <script>
       document.documentElement.classList.add('js');
       document.documentElement.dataset.theme = 'dark-science';
@@ -76,7 +76,7 @@
 
       <section class="chapter research-overview" id="research">
         <div class="overview-heading" data-reveal>
-          <h2>One cell type.</h2>
+          <h2>Research interests</h2>
           <div class="overview-copy">
             <p class="overview-thesis">Multifaceted functions in brain health and disease.</p>
             <p class="overview-deck">From homeostatic surveillance to pathological aggregation, the work asks how cellular state reshapes the nervous system.</p>
@@ -145,8 +145,12 @@
           <div class="current-study-copy" data-reveal>
             <h3>ALS: molecules to systems</h3>
             <p>In ALS, condensate biology connects disease-associated RNA-binding proteins—including TDP-43, FUS and stress-granule components—to altered neuronal proteostasis. RNA and circular RNA may tune these assemblies, creating opportunities to modulate their material state before reversible condensates become persistent aggregates.</p>
-            <p>The second and fourth routes most directly extend the <em>One cell type</em> perspective: microglia can shape motor-neuron pathology through non-cell-autonomous inflammatory and phagocytic signalling, while paired iPSC-derived motor-neuron and microglia models make this human cellular crosstalk experimentally accessible.</p>
+            <p>The second and fourth routes most directly extend this research perspective: microglia can shape motor-neuron pathology through non-cell-autonomous inflammatory and phagocytic signalling, while paired iPSC-derived motor-neuron and microglia models make this human cellular crosstalk experimentally accessible.</p>
           </div>
+          <figure class="current-study-figure current-study-assay" data-reveal>
+            <img src="assets/current-studies/in-vitro-droplet-assay-dark-v2.png" width="1672" height="941" alt="In vitro droplet assay showing Protein A and RNA B-Cy3 assembly, followed by buffer or RNase treatment" loading="lazy" decoding="async" />
+            <figcaption>An in vitro assay comparing droplet formation and time-dependent coalescence in Protein A–RNA B mixtures. <span class="figure-reference">Unpublished data supplied by Chan Rim.</span></figcaption>
+          </figure>
         </article>
       </section>
 
@@ -165,7 +169,7 @@
           <li class="hypothesis-step" data-reveal>
             <div class="hypothesis-copy"><h4>The immune-neural integrator</h4><p>Through phagocytosis and synaptic pruning, microglia regulate immune and synaptic environments while sensing neuronal activity, tissue-remodelling cues and cytokine signals across the CNS.</p></div>
             <div class="hypothesis-visuals hypothesis-visuals-single">
-              <figure class="evidence-panel"><img src="assets/hypothesis-figures-dark/01-immune-neural-integrator.png?v=2" width="1740" height="750" alt="Phagocytosis and synaptic-pruning microscopy beside a diagram of microglial integration of neuronal, remodelling and cytokine signals" loading="lazy" decoding="async" /><figcaption>Phagocytosis and synaptic pruning connect immune sensing to circuit remodelling. <span class="figure-reference">Escoubas CC, Molofsky AV. <em>Trends in Immunology.</em> 2024;45:358–370. · Rim C, et al. <em>Schizophrenia.</em> 2022. · Phagocytosis data: Chan Rim.</span></figcaption></figure>
+              <figure class="evidence-panel"><div class="immune-integrator-composite"><img src="assets/hypothesis-figures-dark/01-immune-neural-integrator.png?v=2" width="1740" height="750" alt="Phagocytosis and synaptic-pruning microscopy beside a diagram of microglial integration of neuronal, remodelling and cytokine signals" loading="lazy" decoding="async" /><video class="phagocytosis-live" autoplay muted loop playsinline preload="metadata" poster="assets/hypothesis-figures-dark/phagocytosis-live-poster.png" aria-label="Live microscopy of microglial phagocytosis"><source src="assets/hypothesis-figures-dark/phagocytosis-live.mp4" type="video/mp4" /></video></div><figcaption>Phagocytosis and synaptic pruning connect immune sensing to circuit remodelling. <span class="figure-reference">Escoubas CC, Molofsky AV. <em>Trends in Immunology.</em> 2024;45:358–370. · Rim C, et al. <em>Schizophrenia.</em> 2022. · Phagocytosis data and footage: Chan Rim.</span></figcaption></figure>
             </div>
           </li>
 
@@ -216,14 +220,6 @@
           </ol>
         </section>
 
-        <div class="lifespan-evidence" id="life-stage-research" data-reveal>
-          <div class="lifespan-evidence-heading"><h3>My research across life stages</h3></div>
-          <div class="lens" data-lens>
-            <div class="lens-controls" role="tablist" aria-label="Research evidence across three life stages"><button class="lens-tab is-active" type="button" role="tab" aria-selected="true" data-lens-key="development">Developmental stage</button><button class="lens-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-lens-key="adulthood">Adulthood</button><button class="lens-tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-lens-key="aging">Brain aging</button></div>
-            <div class="lens-stage"><figure class="lens-picture shutter is-in research-figure paper-figure"><img id="lens-image" src="assets/paper-figures/developmental-synaptic-engulfment.png" width="2636" height="1123" alt="Microglial engulfment of presynaptic and postsynaptic markers after prenatal dexamethasone exposure" loading="lazy" decoding="async" /></figure><div class="lens-copy" aria-live="polite"><h3 id="lens-title">Prenatal stress leaves sex- and region-specific traces</h3><p id="lens-question">Prenatal dexamethasone produced schizophrenia-relevant behaviours in male offspring and depressive-like behaviours in females, accompanied by distinct microglial changes across the mPFC and hippocampus.</p><p id="lens-evidence"><strong>My papers</strong><span class="lens-paper-links"><a href="https://doi.org/10.1038/s41537-022-00280-6" target="_blank" rel="noreferrer">Schizophrenia, 2022 · Co-first author</a></span></p></div></div>
-          </div>
-          <noscript><p class="noscript-note">The research follows microglia across development, adult psychiatric disease and brain aging.</p></noscript>
-        </div>
       </section>
 
       <section class="chapter publications" id="publications">
@@ -249,6 +245,6 @@
       <p class="credits">Research images are excerpted from Chan Rim’s doctoral dissertation and the corresponding first- or co-first-author publications. Figure panels are presented without altering the underlying scientific data.</p>
       <div class="footer-meta"><span>© <span id="year"></span> Chan Rim</span><span>Research portfolio</span></div><div class="footer-name" aria-hidden="true">CHAN RIM</div>
     </footer>
-    <script src="app.js?v=9"></script>
+    <script src="app.js?v=10"></script>
   </body>
 </html>

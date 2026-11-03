@@ -105,6 +105,60 @@ function observeReveals() {
   items.forEach((item) => observer.observe(item));
 }
 
+function setupCollapsibleChapters() {
+  const profile = $("#profile");
+  const research = $("#research");
+  const lifespan = $("#profile-story");
+  const currentStudies = $("#current-studies");
+  const papers = $("#publications");
+
+  if (lifespan && currentStudies) currentStudies.before(lifespan);
+
+  const definitions = [
+    { key: "profile", label: isKorean ? "소개" : "Profile", sections: [profile], open: false },
+    { key: "research", label: isKorean ? "연구" : "Research", sections: [research, lifespan], open: true },
+    { key: "current", label: isKorean ? "현재 연구" : "Current studies", sections: [currentStudies], open: true },
+    { key: "papers", label: isKorean ? "논문" : "Papers", sections: [papers], open: true },
+  ].map((group) => ({ ...group, sections: group.sections.filter(Boolean) })).filter((group) => group.sections.length);
+
+  const controllers = [];
+  definitions.forEach((group) => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = `chapter-toggle chapter-toggle--${group.key}`;
+    button.setAttribute("aria-controls", group.sections.map((section) => section.id).join(" "));
+    button.innerHTML = `<span class="chapter-toggle__label">${group.label}</span><span class="chapter-toggle__mark" aria-hidden="true"></span>`;
+    group.sections[0].before(button);
+
+    const setOpen = (open) => {
+      group.sections.forEach((section) => { section.hidden = !open; });
+      button.setAttribute("aria-expanded", String(open));
+      button.setAttribute("aria-label", `${group.label} ${open ? (isKorean ? "접기" : "collapse") : (isKorean ? "펼치기" : "expand")}`);
+      $(".chapter-toggle__mark", button).textContent = open ? "−" : "+";
+      if (open) window.requestAnimationFrame(observeReveals);
+    };
+
+    setOpen(group.open);
+    button.addEventListener("click", () => setOpen(button.getAttribute("aria-expanded") !== "true"));
+    controllers.push({ group, setOpen });
+  });
+
+  const openForTarget = (target) => {
+    if (!target) return;
+    controllers.forEach(({ group, setOpen }) => {
+      if (group.sections.some((section) => section === target || section.contains(target))) setOpen(true);
+    });
+  };
+
+  document.addEventListener("click", (event) => {
+    const link = event.target.closest('a[href^="#"]');
+    if (!link || link.getAttribute("href") === "#") return;
+    openForTarget($(link.getAttribute("href")));
+  }, { capture: true });
+  window.addEventListener("hashchange", () => openForTarget($(window.location.hash)));
+  if (window.location.hash) openForTarget($(window.location.hash));
+}
+
 function setupLens() {
   const tabs = $$(".lens-tab");
   const image = $("#lens-image");
@@ -169,6 +223,7 @@ function setupVideo() {
 
 const year = $("#year");
 if (year) year.textContent = new Date().getFullYear();
+setupCollapsibleChapters();
 renderPublications();
 setupLens();
 setupFilters();

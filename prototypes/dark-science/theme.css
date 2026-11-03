@@ -35,6 +35,10 @@ html[data-theme="dark-science"] a {
   font-weight: 400;
 }
 
+html[data-theme="dark-science"] body[data-lang="ko"] {
+  --font-editorial: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+}
+
 html[data-theme="dark-science"] h1,
 html[data-theme="dark-science"] h2,
 html[data-theme="dark-science"] h3,
