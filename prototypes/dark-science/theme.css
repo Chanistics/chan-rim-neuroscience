@@ -313,9 +313,13 @@ html[data-theme="dark-science"] .hypothesis-visuals-single {
 }
 
 html[data-theme="dark-science"] .hypothesis-visuals-continuum {
-  grid-template-columns: minmax(0, 1.4754fr) minmax(0, 0.8889fr);
+  grid-template-columns: minmax(0, 0.78fr) minmax(0, 1fr);
   gap: 0;
   align-items: start;
+}
+
+html[data-theme="dark-science"] .hypothesis-visuals-continuum .evidence-panel:first-child {
+  padding-top: 32.3%;
 }
 
 html[data-theme="dark-science"] .hypothesis-visuals-continuum .evidence-panel:first-child figcaption {
@@ -435,6 +439,10 @@ html[data-theme="dark-science"] .contact-row:nth-child(odd) {
   html[data-theme="dark-science"] .hypothesis-visuals-continuum {
     grid-template-columns: minmax(0, 1fr);
     gap: var(--gutter);
+  }
+
+  html[data-theme="dark-science"] .hypothesis-visuals-continuum .evidence-panel:first-child {
+    padding-top: 0;
   }
 
   html[data-theme="dark-science"] .hypothesis-visuals-continuum .evidence-panel:first-child figcaption,
