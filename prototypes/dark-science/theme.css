@@ -313,13 +313,13 @@ html[data-theme="dark-science"] .hypothesis-visuals-single {
 }
 
 html[data-theme="dark-science"] .hypothesis-visuals-continuum {
-  grid-template-columns: minmax(0, 0.78fr) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1.12fr) minmax(0, 1fr);
   gap: 0;
   align-items: start;
 }
 
 html[data-theme="dark-science"] .hypothesis-visuals-continuum .evidence-panel:first-child {
-  padding-top: 32.3%;
+  padding-top: 32.7%;
 }
 
 html[data-theme="dark-science"] .hypothesis-visuals-continuum .evidence-panel:first-child figcaption {
@@ -340,11 +340,28 @@ html[data-theme="dark-science"] .evidence-panel {
 }
 
 html[data-theme="dark-science"] .evidence-panel img {
-  width: 100%;
+  width: auto;
+  max-width: 100%;
   height: auto;
+  margin-inline: auto;
   object-fit: contain;
+  image-rendering: auto;
   background: transparent;
   mix-blend-mode: normal;
+}
+
+html[data-theme="dark-science"] .hero-mobile-image img,
+html[data-theme="dark-science"] .overview-visual img,
+html[data-theme="dark-science"] .current-study-figure img,
+html[data-theme="dark-science"] .paper-figure img,
+html[data-theme="dark-science"] .image-field img,
+html[data-theme="dark-science"] .trajectory-row img,
+html[data-theme="dark-science"] .fellowship-image img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin-inline: auto;
+  image-rendering: auto;
 }
 
 html[data-theme="dark-science"] .evidence-image-frame {
